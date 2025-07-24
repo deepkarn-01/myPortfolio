@@ -1,0 +1,117 @@
+/* style.css */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #0a3d62;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  background: #f0f4f8;
+  border-bottom: 1px solid #d1d9e6;
+  z-index: 1000;
+}
+nav {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+nav .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #05386b;
+  letter-spacing: 1.2px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav ul li a {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active {
+  background-color: #379683;
+  color: white;
+}
+
+/* Main container */
+main {
+  max-width: 1100px;
+  margin: 100px auto 60px; /* top margin to offset fixed header */
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+/* Section titles */
+h1, h2 {
+  color: #05668d;
+}
+h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-left: 5px solid #379683;
+  padding-left: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #379683;
+  color: white;
+  padding: 0.75rem 1.8rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background-color: #05668d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  main {
+    margin: 120px 10px 40px;
+  }
+}

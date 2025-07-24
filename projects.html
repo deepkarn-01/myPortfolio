@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects - Deepesh Kumar</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+  .project-card {
+    background: #f0f4f8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgb(3 41 73 / 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(3 41 73 / 0.15);
+  }
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+    color: #379683;
+  }
+  .project-card p {
+    font-size: 1rem;
+    color: #05445e;
+  }
+  .project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #05668d;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  .project-card a:hover {
+    border-color: #379683;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+<div class="logo"><a href="index.html" style="color:#05386b; text-decoration:none;">Deepesh Kumar</a></div>    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Projects</h1>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>AI-Powered Fraud Detection</h3>
+      <p>An advanced system using machine learning algorithms to detect and prevent fraudulent transactions in real-time.</p>
+      <a href="#">View Details →</a>
+    </div>
+    <div class="project-card">
+      <h3>Blockchain-Based Secure Transactions</h3>
+      <p>Developed a blockchain integration for secure and transparent digital transactions.</p>
+      <a href="#">View Details →</a>
+    </div>
+    <div class="project-card">
+      <h3>Space Launch Simulation</h3>
+      <p>Simulated rocket launch trajectories using physics-based modeling and data visualization.</p>
+      <a href="#">View Details →</a>
+    </div>
+  </div>
+</main>
+
+<footer style="text-align:center; padding: 1.5rem 1rem; background:#f0f4f8; color:#05668d; font-weight:500;">
+  &copy; 2025 Deepesh Kumar — Inspired by CERN
+</footer>
+
+</body>
+</html>
